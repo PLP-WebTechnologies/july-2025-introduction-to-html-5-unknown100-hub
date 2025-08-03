@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Accessible SEO‑Friendly Demo Page</title>
+  <meta name="description" content="Demo page showing basic SEO principles (title, headings, meta description, alt text) alongside HTML5 semantic layout and accessibility landmarks.">
+  <meta name="viewport" content="width=device-width,initial‑scale=1">
+  <!-- Optional: robots meta example to control indexing -->
+  <!-- <meta name="robots" content="index, follow"> -->
+  <link rel="canonical" href="https://example.com/accessible-seo-demo.html">
+  <style>
+   
+    /* Simple layout */
+    header, footer, aside, main { padding: 1rem; margin: 0 auto; max-width: 800px; }
+    nav a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Accessible SEO‑Friendly Demo</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#sidebar">Sidebar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction</h2>
+      <p>This page showcases a simple, accessible layout built with HTML5 semantic elements and structured for SEO.</p>
+    </section>
+
+    <article id="content" aria-labelledby="content-heading">
+      <h2 id="content-heading">Main Article Section</h2>
+      <h3>Subsection Heading (H3)</h3>
+      <img src="demo.jpg" alt="A person using a laptop for web development">
+      <p>When you write text, use <strong>plain language</strong>, and include your target keywords in headings, paragraphs, and image alt text.</p>
+      <p><a href="#more" aria-describedby="more">Learn more about accessibility best practices</a>.</p>
+    </article>
+
+    <aside id="sidebar" aria-labelledby="sidebar-heading">
+      <h2 id="sidebar-heading">Sidebar & Related Links</h2>
+      <p>Helpful links:</p>
+      <ul>
+        <li><a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener">WCAG 2.1 Guidelines</a></li>
+        <li><a href="https://developers.google.com/search/docs" target="_blank" rel="noopener">Google SEO Starter Guide</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025‑08‑02">2025</time> Example Corp. | <a href="/privacy.html">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
